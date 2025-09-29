@@ -5,7 +5,7 @@ on:
       openwrt_kernel:
         description: "选择构建的内核(斐讯N1)"
         required: false
-        default: "6.6.93"
+        default: "6.12.39"
         type: choice
         options:
           - 5.4.291
@@ -92,30 +92,30 @@ on:
           - 'no'
       enable_store:
         description: "集成 store 商店"
-        required: false
+        required: true
         type: boolean
-        default: true
+        default: false
       skip_imagebuilder:
         description: "直接使用底包快速构建固件, 忽略自定义插件 ----（跳过 ImageBuilder）"
-        required: false
-        default: false
+        required: true
+        default: true
         type: boolean
       replace_banner:
         description: '替换为ImmortalWrt的banner信息'
-        required: false
-        default: false
+        required: true
+        default: true
         type: boolean
       rootfs_partsize:
         description: '软件包大小1G固定'
         required: true
-        default: "1024"
+        default: "2048"
         type: choice
         options:
-          - '1024'
+          - '2048'
       builder_name:
         description: "设置打包作者的名称"
         required: true
-        default: 'wukongdaily'
+        default: 'Geek'
 
 jobs:
   build:
