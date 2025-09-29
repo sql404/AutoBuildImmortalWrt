@@ -28,6 +28,7 @@ PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
+PACKAGES="$PACKAGES zoneinfo-asia"
 # PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 # 文件管理器
 # PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
